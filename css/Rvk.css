@@ -423,6 +423,12 @@ nav a {
   }
 }
 
+@media (max-width: 340px) {
+  .inner-close-btn {
+    top: 380%;
+  }
+}
+
 @media (min-width: 478px) {
   .drop-down-items1 a {
     font-size: 16px;
