@@ -91,6 +91,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const checkboxes = document.querySelectorAll('input[name="services"]');
+const serviceSelector = document.getElementById('serviceSelector');
+
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        const selected = Array.from(checkboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.value);
+
+        // Join selected values with comma and show in the input
+        serviceSelector.value = selected.join(', ');
+    });
+});
+
 
 const popUp = document.getElementById('pop-up');
 const form = document.getElementById('form-handler');

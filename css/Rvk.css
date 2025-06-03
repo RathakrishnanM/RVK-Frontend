@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  overflow-X: hidden;
 }
 
 body {
@@ -808,11 +809,11 @@ a:hover{
 @media (min-width: 1292px) {
 
    #greet h4 {
-    font-size: 30px;
+    font-size: 38px;
    }
 
   #greet h1 {
-    font-size: 25px;
+    font-size: 38px;
   }
 }
 
@@ -859,10 +860,8 @@ top: 10%;
   background-size:cover;
 } */
 
-.footer-float{
-  height: 6vh;
+.footer-float p{
   background-color: black;
-
 }
 
 .md{
@@ -1049,7 +1048,7 @@ top: 10%;
  @media (min-width: 250px) {
   .footer-float-items {
     bottom: 2%;
-    right: 30%;
+    right: 5%;
   }
  }
 

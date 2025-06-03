@@ -116,6 +116,10 @@
     .about-rvk-box {
         row-gap: 25px;
     }
+
+    .about-rvk-2-2 p {
+        padding-left: 50px;
+    }
 }
 
 @media (max-width: 478px) {
