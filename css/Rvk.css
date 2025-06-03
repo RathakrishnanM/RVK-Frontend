@@ -423,7 +423,7 @@ nav a {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 341px) {
   .inner-close-btn {
     top: 380%;
   }
