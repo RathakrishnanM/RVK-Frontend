@@ -401,6 +401,14 @@
     }
 }
 /* end */
+
+@media (min-width: 250px) {
+    .contact-map-box-1 {
+        height: 450px;
+        margin-top: 50px;
+    }
+}
+
 @media (min-width: 520px) {
     .contact-map-box {
         flex-direction: column;
@@ -414,6 +422,7 @@
         width: 350px;
         height: 380px;
         padding: 20px 0;
+        margin-top: 0;
     }
 
     .contact-map-box-1 h2 {
