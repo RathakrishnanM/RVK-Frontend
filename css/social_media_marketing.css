@@ -1,0 +1,299 @@
+.social-media-marketing-box, .social-media-what-we-offer-box, .content-making-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.social-media-marketing-box-1, .social-media-marketing-box-2, .social-media-what-we-offer-box-1, .content-making-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-marketing-box-1 h2 {
+    font-family: spectral;
+    color: rgb(19, 19, 18);
+}
+
+.social-media-marketing-box-2 p {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+@media (min-width: 250px) {
+    .social-media-marketing-box-1 h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    
+    .social-media-marketing-box-2 p {
+        font-size: 16px;
+        margin-top:30px;
+        padding: 0 20px;
+    }
+
+    .social-media-marketing-box-2 img {
+        width: 320px;
+        height: 200px;
+        padding: 5%;
+    }
+}
+
+@media (min-width: 478px) {
+    .social-media-marketing-box-1 h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .social-media-marketing-box-1 h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    
+    .social-media-marketing-box-2 p {
+        font-size: 20px;
+        margin-top:30px;
+        padding: 0 10%; 
+    }
+
+    .social-media-marketing-box-2 img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .social-media-marketing-box-1 h2 {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+    
+    .social-media-marketing-box-2 p {
+        font-size: 23px;
+        padding: 0 20%;
+    }
+
+    .social-media-marketing-box-2 img {
+        width: 600px;
+        height: 350px;
+        margin: -75px 0;
+    }
+}
+
+.social-media-what-we-offer-box-2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    padding: 0 5%;
+}
+
+.social-media-what-we-offer-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    margin-top: 50px;
+    color: rgb(19, 19, 18);
+}
+
+.social-media-what-we-offer-box-2-1 h3 {
+    font-family:Poppins, sans-serif ;
+    font-weight: 500;
+}
+
+.social-media-what-we-offer-box-2-1 img {
+    width: 600px;
+    height: 500px;
+}
+
+@media (min-width: 250px) {
+    .social-media-what-we-offer-box-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media-what-we-offer-box-2-1 img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .social-media-what-we-offer-box-1 h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .social-media-what-we-offer-box-1 h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .social-media-what-we-offer-box-2 {
+        flex-direction: row;
+    }
+
+    .social-media-what-we-offer-box-2-1 img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .social-media-what-we-offer-box-2 {
+        column-gap: 10px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1220px) {
+    .social-media-what-we-offer-box-2-1 img {
+        width: 600px;
+        height: 500px;
+    }
+    .social-media-what-we-offer-box-2 {
+        column-gap: 100px;
+        padding: 0 5%;
+    }
+}
+
+.content-making-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    color: rgb(19, 19, 18);
+}
+
+.content-making-box-2-1 h3 {
+    font-family:Poppins, sans-serif ;
+    font-weight: 500;
+}
+
+.content-making-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.content-making-box-2-2 img{
+    width: 400px;
+    height: 350px;
+}
+
+@media (min-width: 250px) {
+    .content-making-box-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#content-making-item-1 {
+        order: 1;
+    }
+
+    .content-making-box {
+        margin-bottom: 5%;
+    }
+
+    .content-making-box-1 h2 {
+        font-size: 20px;
+    }
+
+    .content-making-box-2-2 img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 50px;
+    }
+
+    .content-making-box-2-1 h3 {
+        font-size: 16px;
+    }
+
+    .content-making-box-2-1 {
+        margin-left: 30px;
+    }
+}
+@media (min-width: 478px) {
+    .social-media-marketing-box-1 h2, .social-media-what-we-offer-box-1 h2, .content-making-box-1 h2 {
+        font-size: 24px;
+    }
+
+    .promotions-offer-box-1 {
+        margin-top: 25px;
+    }
+
+    .content-making-box-2-1 h3 {
+        font-size: 16px;
+    }
+
+    .content-making-box-2-2 img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .social-media-content-making .content-making-box-1 {
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .social-media-marketing-box-1 h2, .social-media-what-we-offer-box-1 h2, .content-making-box-1 h2 {
+        font-size: 28px;
+    }
+
+    
+    .content-making-box-2-1 h3 {
+        font-size: 20px;
+    }
+}
+ 
+@media (min-width: 992px) {
+    .content-making-box-2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    div#content-making-item-2 {
+        order: 2;
+    }
+
+    .content-making-box {
+        margin-bottom: -50px;
+    }
+
+    .social-media-marketing-box-1 h2, .social-media-what-we-offer-box-1 h2, .content-making-box-1 h2 {
+        font-size: 30px;
+    }
+
+    .content-making-box-1 h2 {
+        margin-top: -50px;
+    }
+
+    .content-making-box-2-1 h3 {
+        font-size: 23px;
+    }
+
+    .content-making-box-2-1 {
+        margin-left: 0;
+    }
+
+    .content-making-box-2-2 img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .social-media-content-making .content-making-box-1 {
+        margin-top: 0;
+    }
+
+    .promotions-offer-box-1 {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .social-media-marketing-box-1 h2, .social-media-what-we-offer-box-1 h2, .content-making-box-1 h2 {
+        font-size: 38px;
+    }
+
+    .promotions-offer-box-1 {
+        margin-top: 75px;
+    }
+}

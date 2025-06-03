@@ -1,0 +1,295 @@
+.website-development-box, .website-what-we-offer-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.website-development-box-1, .website-what-we-offer-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.website-what-we-offer-box-1 {
+    margin-bottom: 50px;
+}
+
+.website-development-box-1 h2, .website-what-we-offer-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    color: rgb(19, 19, 18);
+}
+
+.website-development-box-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.website-development-box-2-1 img {
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.website-development-box-2-2 p {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+
+@media (min-width: 250px) {
+
+    .website-development-box-2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .website-development-box-2-1 img, .website-development-box-2-2 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .website-development-box-1 h2 {
+        font-size:20px;
+        margin-top: 50px;
+    }
+
+    .website-what-we-offer-box-1 h2 {
+        font-size:20px;
+    }
+
+    .website-what-we-offer-box-2-1-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .website-what-we-offer-box-2-1-item h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .website-what-we-offer-box-2-1-item h4 {
+        font-size: 14px;
+        color: rgb(97, 92, 92);
+        text-align: center;
+    }
+
+    .website-what-we-offer-box-2-1, .website-what-we-offer-box-2-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        width: 100%;
+    }
+    
+    .website-development-box .campaign-box-2-1 img {
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 478px) {
+    .website-development-box-2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        
+    }
+
+    .website-development-box-2-1 img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .website-development-box-2-2 p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .website-development-box-1 h2 {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .website-what-we-offer-box-2-1-item h4 {
+        font-size: 16px;
+    }
+
+    .website-what-we-offer-box-1 h2 {
+        font-size:24px;
+    }
+
+    .website-what-we-offer-box-2-1, .website-what-we-offer-box-2-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    
+    .website-development-box .campaign-box-2-1 img {
+        width: 450px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .website-development-box-2-1 img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .website-development-box-2-2 p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .website-development-box-1 h2 , .website-what-we-offer-box-1 h2 {
+        font-size: 30px;
+    }
+
+    .website-what-we-offer-box-2-1-item {
+        flex-direction: row;
+    }
+    .website-what-we-offer-box-2-1-item h3 {
+        font-size: 20px;
+    }
+
+    .website-what-we-offer-box-2-1-item h4 {
+        font-size: 18px;
+    }
+
+    .website-what-we-offer-box-3 {
+        margin-top: 5%;
+    }
+    
+    .website-development-box .campaign-box-2-1 img {
+        width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .website-development-box-2 {
+        flex-direction: row;
+    }
+
+    .website-development-box-2-1 img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .website-development-box-2-2 p {
+        font-size: 23px;
+    }
+
+    .website-development-box-1 h2, .website-what-we-offer-box-1 h2 {
+        font-size: 38px;
+    }
+    
+    .website-development-box .campaign-box-2-1 img {
+        width: 500px;
+        margin-top: -5px;
+    }
+
+    .website-development-box .campaign-box-2-2 p {
+        margin-top: -10px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .website-development-box-2-1 img {
+        width: 600px;
+        height: 350px;
+    }
+
+    .website-development-box-2-2 p {
+        font-size: 23px;
+    }
+
+    .website-development-box-1 h2 {
+        font-size: 38px;
+    }
+
+    .website-what-we-offer-box-3 {
+        margin-top: 2%;
+    }
+
+    .website-development-box .campaign-box-2-1 img {
+        width: 600px;
+    }
+
+}
+
+.website-what-we-offer-box {
+    margin: 50px 0 40px 0;
+}
+
+.website-what-we-offer-box-2-1-item {
+    display: flex;
+    column-gap: 30px;
+}
+
+.website-what-we-offer-box-2-1-item img {
+    width: 160px;
+    height: 120px;
+}
+
+.website-what-we-offer-box-2-1-item h3 {
+    font-family:Poppins, sans-serif ;
+    margin-top: 30px;
+}
+
+.website-what-we-offer-box-2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    padding: 0 5%;
+}
+
+.website-what-we-offer-box-3 {
+    display: flex;
+    justify-content: center
+}
+
+.website-what-we-offer-box-2-1-item img {
+    width: 120px;
+    height: 120px;
+}
+
+@media (max-width: 992px) {
+    .website-what-we-offer-box-2 {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .website-what-we-offer-box-2-1-item img {
+        width: 160px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .website-what-we-offer-box-2-1-item {
+        padding: 30px;
+    }
+    
+    .website-what-we-offer-box-2-1-item img {
+        width: 140px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 468px) {
+    .website-what-we-offer-box-2-1-item {
+        padding: 30px;
+    }
+    
+    .website-what-we-offer-box-2-1-item img {
+        width: 120px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,264 @@
+.blog1 h2{
+    font-size: 30px;
+    margin-top: 30px;
+    /* text-decoration: underline; */
+}
+.blog1 h5{
+       font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 20px;
+
+}
+/* card */
+
+
+.card h2{
+    font-size: 24px;
+    font-weight: 400;
+    /* text-align: center; */
+    font-family: spectral;
+    
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #000000;
+  font-family: spectral;
+  
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid rgb(83, 81, 81);
+  background:rgb(236, 222, 174) ;
+  
+}
+
+.btn:hover {
+  background-color:  rgb(134, 120, 71);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.cards_item {
+  display: flex;
+  padding: 1rem;
+  background-color: rgb(236, 222, 174);
+  margin-top: 20px;
+
+
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 26%;
+    height: 20%;
+  }
+}
+
+.main .card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main .card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #ffffff 40%, #ffffff 100%);
+}
+
+.main .card_title {
+  color:black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  font-size: medium;
+}
+
+.main .card_text {
+  color:black;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.main .made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* blog1 */
+
+.blogs1 h2{
+    font-size: 30px;
+    margin-top: 50px;
+ 
+}
+.blogs1 img{
+    margin-top: 50px;
+    height: 400px;
+    
+}
+@media (max-width: 768px) {
+    .blogs1 h2{
+    font-size: 18px;
+    margin-top: 30px;
+ 
+}
+.blogs1 img{
+    margin-top: 30px;
+    height: 200px;
+    
+}
+
+}
+.under{
+  text-decoration: underline;
+  color: rgb(80, 77, 77);
+  margin-top: 30px;
+}
+.blogintro h2{
+  font-family: spectral;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.blogintro p{
+     font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 40px;
+  margin-top: 20px;
+  
+
+}
+.blogintro b{
+  font-weight: 600;
+}
+
+.whyimg{
+width: 500px;
+height: 400px;
+margin-top: 30px;
+}
+.topp{
+  font-size: 18px;
+}
+
+.blogintro a{
+  text-decoration: underline;
+}
+.blogintro a:hover{
+  color: rgb(14, 124, 187);
+}
+.Challengeimg{
+  width: 600px;
+height: 400px;
+margin-top: 30px;
+}
+.Challenges{
+
+  margin-left: 30%;
+
+}
+.futureimg{
+  width: 600px;
+height: 400px;
+margin-top: 30px;
+}
+.future{
+  margin-left: 20%;
+}
+.chooservk{
+margin-top: 30px;
+margin-left:5%;
+}
+.blogconclusion{
+  margin-top: 50px;
+}
+@media (max-width:768px){
+  .blogintro h2{
+  font-family: spectral;
+  font-weight: 600;
+  margin-left: 0px;
+  margin-top: 30px;
+   font-size: 18px;
+}
+.blogintro p{
+     font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left:0px;
+  margin-top: 20px;
+  font-size: 13px;
+ text-align: justify;
+
+}
+.whyimg{
+width: 300px;
+height: 300px;
+margin-top: 30px;
+}
+.topp{
+  font-size: 14px;
+}
+.Challengeimg{
+  width: 300px;
+height: 200px;
+margin-top: 30px;
+}
+.Challenges{
+
+  margin-left: 0%;
+
+}
+.futureimg{
+  width: 300px;
+height: 200px;
+margin-top: 30px;
+}
+.future{
+  margin-left: 0%;
+}
+.chooservk{
+margin-top: 10px;
+margin-left:0%;
+}
+  
+}
+
+
+

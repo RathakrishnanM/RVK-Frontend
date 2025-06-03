@@ -1,0 +1,110 @@
+.our-vision-mission-box {
+    margin: 50px 0;
+}
+
+.our-vision-mission-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    margin-top: 17px;
+    color: rgb(20, 20, 19);
+}
+
+.our-vision-mission-box-2 h2 {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+}
+
+.our-vision-mission-box-2 p {
+    font-size: 15px;  
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+    font-style: normal;
+}
+
+.our-vision-mission-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.our-vision-mission-box-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our-vision-mission-box-2 .card img {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 992px) {
+    .our-vision-mission-box-2 .card {
+        width: 350px;
+        height: 350px;
+    }
+
+    .our-vision-mission-box-2 .card img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .our-vision-mission-box-2 .card p {
+        font-size: 14px;
+    }
+
+    .our-vision-mission-box-1 h2, .our-expertise-box-1 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-vision-mission-box-2 .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .our-vision-mission-box-2 .card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .our-vision-mission-box-2 .card p {
+        font-size: 16px;
+    }
+
+    .our-vision-mission-box-2 {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .our-vision-mission-box-1 h2, .our-expertise-box-1 h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 478px) {
+    .our-vision-mission-box-2 .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .our-vision-mission-box-2 .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .our-vision-mission-box-2 .card p {
+        font-size: 16px;
+    }
+
+    .our-vision-mission-box-1 h2, .our-expertise-box-1 h2 {
+        font-size: 20px;
+    }
+}

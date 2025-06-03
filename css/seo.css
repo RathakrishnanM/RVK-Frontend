@@ -1,0 +1,274 @@
+.seo-box, .why-seo-box, .seo-what-we-offer-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seo-box-1, .why-seo-box-1, .seo-what-we-offer-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seo-box-1 h2 {
+    font-family: spectral;
+    color: rgb(19, 19, 18);
+}
+
+.seo-box-2 {
+    display: flex;
+    padding: 2% 5%;
+}
+
+.why-seo-box-1 h2 {
+    font-family: spectral;
+    font-size: 30px;
+    color: rgb(73, 73, 68);
+}
+
+.seo-box-2-1 p {
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    font-weight: 500;
+    color: rgb(95, 93, 93);
+    text-align: center;
+}
+
+@media (min-width: 250px) {
+    .seo-box-1 h2, .why-seo-box-1 h2 {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .seo-box-2-1 p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .seo-box-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    .seo-box-2-2 img {
+        margin-top: 50px;
+        width: 250px;
+    }
+
+    .why-seo-box-1 {
+        margin-bottom: 25px;
+    }
+
+    div#seo-box-item-1 {
+        order: 2;
+    }
+
+    div#seo-box-item-2 {
+        order: 1;
+    }
+
+    .seo-what-we-offer-box {
+        margin-bottom: -30px;
+    }
+}
+
+@media (min-width: 478px) {
+    .seo-box-1 h2, .why-seo-box-1 h2 {
+        margin-top: 50px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .seo-box-2-1 p {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .seo-box-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 60px;
+    }
+
+    .seo-box-2-2 img {
+        margin-top: 25px;
+        width: 350px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .seo-box-1 h2, .why-seo-box-1 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .seo-box-1 h2, .why-seo-box-1 h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .seo-box-2-1 p {
+        font-size: 23px;
+    }
+
+    .seo-box-2 {
+        /* flex-direction: row;
+        column-gap: 100px;
+        justify-content: center; */
+        padding: 0 10%;
+    }
+
+    div#seo-box-item-2 {
+        order: 1;
+    }
+
+    .seo-box-2-2 img {
+        margin-top: 50px;
+        width: 450px;
+    }
+
+    .seo-what-we-offer-box {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .seo-box-1 h2, .why-seo-box-1 h2 {
+        font-size: 38px;
+    }
+}
+
+.why-seo-box-2 h4 {
+    font-family: spectral; 
+    font-size: 25px;
+    color: rgb(197, 163, 13);
+    margin: 30px 20% 0 20%;
+    text-align: center;
+}
+
+.seo-what-we-offer-box {
+    align-items: center;
+}
+
+.seo-what-we-offer-box-1 {
+    margin-bottom: 75px;
+}
+
+.seo-what-we-offer-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    margin-top: 50px;
+    color: rgb(19, 19, 18);
+}
+
+
+.seo-what-we-offer-box-2 .first-b {
+    color: black;
+    font-size:26px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+}
+
+.seo-what-we-offer-box-2 .sec-b {
+    font-size:21px;
+    color: rgb(95, 94, 94);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    display: block;
+    margin-left: 40px;
+}
+
+@media (min-width: 250px) {
+    .seo-what-we-offer-box-1 h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    
+    .seo-what-we-offer-box-2 .first-b {
+        font-size:18px;
+    }
+
+    .seo-what-we-offer-box-2 .sec-b {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .why-seo-box-2 h4 {
+        font-size: 20px;
+    }
+
+    .seo-what-we-offer-box-1 {
+    margin-bottom: 50px;
+}
+}
+
+@media (min-width: 478px) {
+
+    .seo-what-we-offer-box-1 h2 {
+        font-size: 24px;
+    }
+    
+    .seo-what-we-offer-box-2 .first-b {
+        font-size:20px;
+    }
+
+    .seo-what-we-offer-box-2 .sec-b {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .why-seo-box-2 h4 {
+        font-size: 24px;
+    }
+
+    .seo-what-we-offer-box-2 {
+        padding: 0 5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .seo-what-we-offer-box-1 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .seo-what-we-offer-box-1 h2 {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+    
+    .seo-what-we-offer-box-2 .first-b {
+        font-size:22px;
+    }
+
+    .seo-what-we-offer-box-2 .sec-b {
+        font-size: 20px;
+        margin-left: 38px;
+    }
+
+    .why-seo-box-2 h4 {
+        font-size: 28px;
+    }
+
+    .seo-what-we-offer-box-1 {
+        margin-bottom: 50px;
+    }
+
+    .seo-what-we-offer-box-2 {
+        padding: 0 5%;
+        margin-bottom: -40px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .seo-what-we-offer-box-1 h2 {
+        font-size: 38px;
+    }
+}

@@ -1,0 +1,150 @@
+.ui-ux-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-ux-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ui-ux-box-1 h2 {
+    font-family: spectral;
+    color: rgb(19, 19, 18);
+}
+
+.ui-ux-box-2-1 p { 
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.ui-ux-box-2 {
+    display: flex;
+    padding: 5% 5% 0 5%;
+    column-gap: 100px;
+}
+
+.ui-ux-box-2 img {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+@media (min-width: 250px) {
+
+    .ui-ux-box-1 h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .ui-ux-box-2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .ui-ux-box-2-1 p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    div#ui-ux-item-1 {
+        order: 2
+    }
+    div#ui-ux-item-2 {
+        order: 1
+    }
+
+    .ui-ux-box-2 img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 478px) {
+    .ui-ux-box-1 h2 {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .ui-ux-box-2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+
+    .ui-ux-box-2-1 p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .ui-ux-box-2 img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ui-ux-box-1 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .ui-ux-box-1 h2 {
+        font-size: 38px;
+        margin-top: 75px;
+    }
+
+    .ui-ux-box-2-1 p {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .ui-ux-offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+
+    .ui-ux-box-2 img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .ui-ux-box-2 {
+        padding-top: 3%;
+    }
+
+}
+
+@media (min-width: 1220px) {
+    .ui-ux-box-1 h2 {
+        font-size: 38px;
+        margin-top: 75px;
+    }
+
+    .ui-ux-box-2 {
+        flex-direction: column;
+        padding-top: 2%;
+    }
+
+    .ui-ux-box-2-1 p {
+        font-size: 23px;
+        text-align: center;
+        padding: 0 20%;
+    }
+
+    div#ui-ux-item-2 {
+        order: 1
+    }
+
+    .ui-ux-offer {
+        flex-direction: row;
+    }
+}

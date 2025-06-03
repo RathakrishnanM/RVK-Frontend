@@ -1,0 +1,129 @@
+.about-rvk-box ,.about-rvk-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-rvk-box {
+    row-gap: 75px;
+}
+
+.about-rvk-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    margin-top: 50px;
+    color: rgb(19, 19, 18);
+}
+
+.about-rvk-2 p {
+    font-size: 23px;
+    font-family: Poppins, sans-serif;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    padding-right: 200px;
+}
+
+.about-rvk-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20%;
+}
+
+.about-rvk-2-1, .about-rvk-2-2 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.about-rvk-2-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.about-rvk-2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-expertise-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    color: rgb(20, 20, 19);
+}
+
+@media (max-width: 1500px) {
+    .about-rvk-2 {
+        column-gap: 50px;
+    }
+
+    .about-rvk-2 p {
+        font-size: 23px;
+        padding-right: 50px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    
+    .about-rvk-2 img {
+        width: 400px;
+        height: 350px;
+    }
+
+    .about-rvk-2 p {
+        font-size: 16px;
+    }
+
+    .about-rvk-1 h2 {
+        font-size: 30px;
+    }
+
+    .about-rvk-box {
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-rvk-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .about-rvk-2 img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .about-rvk-1 h2 {
+        font-size: 28px;
+    }
+
+    .about-rvk-box {
+        row-gap: 50px;
+    }
+
+    .about-rvk-box {
+        row-gap: 25px;
+    }
+}
+
+@media (max-width: 478px) {
+    .about-rvk-1 h2 {
+        font-size: 20px;
+    }
+
+    .about-rvk-box {
+        row-gap: 25px;
+    }
+}

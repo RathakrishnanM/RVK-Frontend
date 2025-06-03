@@ -1,0 +1,220 @@
+.campaign-box, .campaign-offer-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campaign-offer-box {
+    margin-bottom: -50px;
+}
+
+.campaign-box-1, .campaign-offer-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campaign-box-1 h2, .campaign-offer-box-1 h2 {
+    font-family: spectral;
+    font-size: 38px;
+    color: rgb(19, 19, 18);
+}
+
+.campaign-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.campaign-box-2-2 p { 
+    font-family: Poppins, sans-serif;
+    text-align: left;
+}
+
+@media (min-width: 250px) {
+    .campaign-box-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campaign-box-2-2 p {
+        font-size: 16px;
+        margin-top: 50px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .campaign-offer-box-1 h2, .campaign-box-1 h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .campaign-box-2-1 img {
+        width: 250px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 478px) {
+    .campaign-offer-box-1 h2, .campaign-box-1 h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .campaign-offer-box-1 h2, .campaign-box-1 h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .campaign-box-2-1 img {
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    .campaign-box-2-2 p {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .campaign-box-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10% 0 10%;
+    }
+
+    .campaign-offer-box-1 h2, .campaign-box-1 h2 {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+
+    .campaign-box-2-2 p {
+        font-size: 23px;
+        margin-top: 50px;
+    }
+
+    .campaign-offer-box-1 h2, .campaign-box-1 h2 {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+
+    .campaign-box-2-1 img {
+        width: 450px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1220px) {
+
+    .campaign-box-2 {
+        padding: 0 10%;
+    }
+
+    .campaign-box-2-2 p {
+        font-size: 23px;
+    }
+
+    .campaign-offer-box-1 h2, .campaign-box-1 h2 {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+
+    .campaign-offer-box {
+        margin-bottom: -5%;
+    }
+
+}
+
+.what-we-offer-box-2-2 {
+    padding: 0 20%;
+}
+
+.compainga-what-we-offer {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 100%;display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compainga-what-we-offer-1 {
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.compainga-what-we-offer-1-1 {
+    display: flex;
+}
+
+.compainga-what-we-offer-1-1 h3 {
+    font-family:Poppins, sans-serif;
+    font-size: 22px;
+}
+
+.compainga-what-we-offer-1-1 h4 {
+    font-size: 20px;
+    color: rgb(97, 92, 92);
+    margin-left: 20px;
+}
+
+@media (max-width: 1220px) {
+
+    .compainga-what-we-offer-1-1 h3 {
+        font-size: 22px;
+    }
+    
+    .compainga-what-we-offer-1-1 h4 {
+        font-size: 20px;
+    }
+
+    .compainga-what-we-offer-1-1{
+        padding-right: 5%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .compainga-what-we-offer-1-1 h3 {
+        font-size: 22px;
+    }
+    
+    .compainga-what-we-offer-1-1 h4 {
+        font-size: 20px;
+    }
+
+    .compainga-what-we-offer-1-1 {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .compainga-what-we-offer-1 {
+        padding: 0;
+    }
+
+    .compainga-what-we-offer-1-1 h3 {
+        font-size: 18px;
+    }
+    
+    .compainga-what-we-offer-1-1 h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 468px) {
+
+    .compainga-what-we-offer-1-1 h3 {
+        font-size: 14px;
+    }
+    
+    .compainga-what-we-offer-1-1 h4 {
+        font-size: 12px;
+    }
+}

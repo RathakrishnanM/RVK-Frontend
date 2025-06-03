@@ -1,0 +1,132 @@
+.promotions-box {
+    margin-bottom: 50px;
+}
+
+.promotions-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promotions-box-1 h2 {
+    font-family: spectral;
+    color: rgb(19, 19, 18);
+}
+
+.promotions-box-2 {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.promotions-box-2-2 p {
+    font-size: 23px;
+    margin-top:70px; 
+    font-family: Poppins, sans-serif;
+    text-align: left;
+}
+
+div#promotions-item-1 {
+    order: 1;
+}
+
+.off h3 {
+    font-size: 23px; 
+    font-family: Macondo, cursive; 
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(66, 60, 60);
+    margin-bottom: 40px;
+}
+
+@media (min-width: 250px) {
+
+    .promotions-box-1 h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .promotions-box-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotions-box-2-1 img {
+        width: 250px;
+        margin-top: 25px;
+    }
+
+    .content-making-box-2-2 img {
+        width: 250px;
+    }
+
+    .promotions-box-2-2 p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .off {
+        padding: 0 20px;
+    }
+
+    .content-making-box-2 {
+        margin-left: 20px;
+    }
+
+    .promotions-box {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 478px) {
+
+    .promotions-box-1 h2 {
+        font-size: 24px;
+    }
+
+    .promotions-box-2-2 p {
+        font-size: 18px;
+    }
+
+    .content-making-box-2 {
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .promotions-box-1 h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+    .promotions-box-1 h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .promotions-box-2 {
+        flex-direction: row;
+    }
+
+    .content-making-box-2 {
+        margin-left: 0;
+    }
+
+    .off1 {
+        width: 60%;
+        padding: 0 20%;
+        margin-top: 3%;
+    }
+
+    .promotions-box-2-2 p {
+        margin-bottom: 0;
+    }    
+}
+
+@media (min-width: 1220px) {
+    .promotions-box-1 h2 {
+        font-size: 38px;
+    }
+}
