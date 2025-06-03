@@ -110,7 +110,7 @@ form.addEventListener('submit', async (e) => {
   console.log('Sending payload:', payload);
 
   try {
-    const response = await fetch('http://192.168.0.61:3000/submit-form', {
+    const response = await fetch('https://rvk-backend-081m.onrender.com/submit-form', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
