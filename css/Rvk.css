@@ -421,11 +421,15 @@ nav a {
   .header-item-5-1 h2 {
     font-size: 18px;
   }
-}
 
-@media (max-width: 341px) {
   .inner-close-btn {
     top: 380%;
+  }
+}
+
+@media (min-width: 340px) {
+  .inner-close-btn {
+    top: 490%;
   }
 }
 

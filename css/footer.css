@@ -3,7 +3,7 @@
     justify-content: space-around;
     background-color: rgb(251,201,19);
     width: 100%;
-    font-family: outfit, sans-serif;
+    font-family: 'popins';
     padding: 2% 0 2% 0;
 }
 
@@ -21,7 +21,7 @@
 
 
 .footer-col-1-1 pre {
-    font-family: outfit, sans-serif;
+    font-family: 'popins';
 }
 
 .footer .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
