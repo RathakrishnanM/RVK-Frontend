@@ -32,6 +32,24 @@
     border-radius: 30px;
     box-shadow: 3px 3px 3px gray;
 }
+#graphic{
+    height: 350px;
+    width: 600px;
+}
+
+@media (max-width: 992px) {
+    div#graphic-design1 {
+        order: 2;
+    }
+}
+
+@media (max-width:768px){
+       #graphic{
+    height: 250px;
+    width: 350px;
+    margin-top: 0px;
+}
+}
 
 @media (min-width: 250px) {
 
@@ -91,6 +109,7 @@
     .ui-ux-box-1 h2 {
         font-size: 30px;
     }
+ 
 }
 
 @media (min-width: 992px) {
@@ -121,6 +140,10 @@
         padding-top: 3%;
     }
 
+    #graphic-design1 {
+        padding: 0;
+    }
+
 }
 
 @media (min-width: 1220px) {
@@ -146,5 +169,8 @@
 
     .ui-ux-offer {
         flex-direction: row;
+    }
+    .footer{
+        margin-top: 50px;
     }
 }
