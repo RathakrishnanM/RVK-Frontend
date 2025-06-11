@@ -74,7 +74,13 @@
 
     .social-media-marketing-box-2 img {
         width: 600px;
-        height: 350px;
+        margin: -25px 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .social-media-marketing-box-2 img {
+        margin: -75px 0;
     }
 }
 
