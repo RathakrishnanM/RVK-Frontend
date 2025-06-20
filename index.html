@@ -162,7 +162,7 @@ AOS.init({duration:800});
 
 
 
-<video loop autoplay >
+<video loop autoplay="true" muted>
   <source src="./assets/Final Web Site Rvk Qt.webm" type="video/webm">
 </video>
 
@@ -387,6 +387,7 @@ new FinisherHeader({
 });
 </script> -->
 <script type="text/javascript">
+
 new FinisherHeader({
   "count": 6,
   "size": {
@@ -422,6 +423,8 @@ new FinisherHeader({
     "c"
   ]
 });
+
+setInterval(() => window.location.reload(), 5000); 
 </script>
 </body>
 </html>
