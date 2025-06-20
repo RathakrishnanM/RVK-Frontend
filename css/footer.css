@@ -1,9 +1,9 @@
 .footer {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(251,201,19);
+    background-color: rgb(247, 214, 97) ;
     width: 100%;
-    font-family: 'popins';
+    font-family: 'poppins';
     padding: 2% 0 2% 0;
 }
 
@@ -15,13 +15,13 @@
 
 .footer-col-1 {
     row-gap: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 
 
 .footer-col-1-1 pre {
-    font-family: 'popins';
+    font-family: 'poppins';
 }
 
 .footer .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
@@ -34,7 +34,7 @@
 }
 
 .footer a {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* @media (min-width: 1001px) {
