@@ -15,7 +15,7 @@
 }
 
 .website-development-box-1 h2, .website-what-we-offer-box-1 h2 {
-    font-family: spectral;
+    font-family: poppins;
     font-size: 38px;
     color: rgb(19, 19, 18);
 }
@@ -32,8 +32,9 @@
 }
 
 .website-development-box-2-2 p {
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     text-align: center;
+    font-weight: 200;
 }
 
 
@@ -256,7 +257,7 @@
 
 .website-what-we-offer-box-2-1-item img {
     width: 120px;
-    height: 120px;
+    height: 100px;
 }
 
 @media (max-width: 992px) {

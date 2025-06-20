@@ -16,18 +16,27 @@
 
 .card h2{
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     /* text-align: center; */
     font-family: spectral;
     
+}
+.card h2:hover{
+  text-decoration: underline;
+  color: rgb(211, 200, 100);
 }
 
 img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+  
 }
-
+img:hover{
+  transform: scale(1.1);
+   transition: 0.5s;
+}
+/* 
 .btn {
   color: #000000;
   font-family: spectral;
@@ -40,14 +49,11 @@ img {
   display: block;
   width: 100%;
   cursor: pointer;
-  border: 2px solid rgb(83, 81, 81);
   background:rgb(236, 222, 174) ;
   
-}
+} */
 
-.btn:hover {
-  background-color:  rgb(134, 120, 71);
-}
+
 
 .cards {
   display: flex;
@@ -60,7 +66,6 @@ img {
 .cards_item {
   display: flex;
   padding: 1rem;
-  background-color: rgb(236, 222, 174);
   margin-top: 20px;
 
 
@@ -82,7 +87,7 @@ img {
 .main .card {
   background-color: white;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 30px 50px -10px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
