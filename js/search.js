@@ -15,44 +15,45 @@ const pages = [
   { name: "video production", url: "/html/productions" },
 ];
 
-document.getElementById("search").addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    const input = this.value.trim().toLowerCase();
+// document.getElementById("search").addEventListener("keydown", function (event) {
+//   if (event.key === "Enter") {
+//     const input = this.value.trim().toLowerCase();
 
-    if (!input) return;
+//     if (!input) return;
 
-    const match = pages.find(page => page.name.toLowerCase() === input);
+//     const match = pages.find((page) => page.name.toLowerCase() === input);
 
-    if (match) {
-      window.location.href = `${match.url}.html`;
-    } else {
-      window.location.href = 'pageNotFound.html';
-    }
-  }
-});
+//     if (match) {
+//       window.location.href = `${match.url}.html`;
+//     } else {
+//       window.location.href = "pageNotFound.html";
+//     }
+//   }
+// });
 
-document.getElementById("search1").addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    const input = this.value.trim().toLowerCase();
+// document
+//   .getElementById("search1")
+//   .addEventListener("keydown", function (event) {
+//     if (event.key === "Enter") {
+//       const input = this.value.trim().toLowerCase();
 
-    if (!input) return;
+//       if (!input) return;
 
-    const match = pages.find(page => page.name.toLowerCase() === input);
+//       const match = pages.find((page) => page.name.toLowerCase() === input);
 
-    if (match) {
-      window.location.href = `${match.url}.html`;
-    } else {
-      window.location.href = 'pageNotFound.html';
-    }
-  }
-});
+//       if (match) {
+//         window.location.href = `${match.url}.html`;
+//       } else {
+//         window.location.href = "pageNotFound.html";
+//       }
+//     }
+//   });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a[href]");
 
-document.addEventListener('DOMContentLoaded', function () {
-  const links = document.querySelectorAll('a[href]');
-
-  links.forEach(link => {
-    link.addEventListener('click', function (e) {
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
       const targetUrl = this.href;
 
       // Skip external links
@@ -60,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isInternal) return;
 
       // Skip empty or hash-only links (like href="#" or href="#section")
-      const hrefAttr = this.getAttribute('href');
-      if (!hrefAttr || hrefAttr === '#' || hrefAttr.startsWith('#')) return;
+      const hrefAttr = this.getAttribute("href");
+      if (!hrefAttr || hrefAttr === "#" || hrefAttr.startsWith("#")) return;
 
       // Show loader and navigate after delay
       e.preventDefault();
-      document.getElementById('loader').classList.add('active');
+      document.getElementById("loader").classList.add("active");
 
       setTimeout(() => {
         window.location.href = targetUrl;
@@ -74,77 +75,86 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceInput = document.getElementById("serviceSelector");
+  const choicesWrapper = document.getElementById("choicesWrapper");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const serviceInput = document.getElementById('serviceSelector');
-    const choicesWrapper = document.getElementById('choicesWrapper');
+  serviceInput.addEventListener("click", function () {
+    choicesWrapper.style.display =
+      choicesWrapper.style.display === "none" ? "block" : "none";
+  });
 
-    serviceInput.addEventListener('click', function () {
-        choicesWrapper.style.display = choicesWrapper.style.display === 'none' ? 'block' : 'none';
-    });
-
-    // Optional: Hide when clicking outside
-    document.addEventListener('click', function (e) {
-        if (!document.querySelector('.service-select-container').contains(e.target)) {
-            choicesWrapper.style.display = 'none';
-        }
-    });
-});
-
-const checkboxes = document.querySelectorAll('input[name="services"]');
-const serviceSelector = document.getElementById('serviceSelector');
-
-checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', () => {
-        const selected = Array.from(checkboxes)
-            .filter(cb => cb.checked)
-            .map(cb => cb.value);
-
-        // Join selected values with comma and show in the input
-        serviceSelector.value = selected.join(', ');
-    });
-});
-
-
-const popUp = document.getElementById('pop-up');
-const form = document.getElementById('form-handler');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById('name').value;
-  const mobile = document.getElementById('mobile').value;
-  const city = document.getElementById('city').value;
-  const message = document.getElementById('message').value;
-
-  const services = Array.from(document.querySelectorAll('input[name="services"]:checked'))
-    .map(cb => cb.value);
-
-  const payload = { name, mobile, services, city, message };
-  console.log('Sending payload:', payload);
-
-  try {
-    const response = await fetch('https://rvk-backend-081m.onrender.com/submit-form', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    });
-
-    const result = await response.json();
-    if (result.success) {
-      popUp.style.display = 'flex';
-    } else {
-      alert('Submission failed!');
+  // Optional: Hide when clicking outside
+  document.addEventListener("click", function (e) {
+    if (
+      !document.querySelector(".service-select-container").contains(e.target)
+    ) {
+      choicesWrapper.style.display = "none";
     }
-  } catch (err) {
-    console.error('Fetch error:', err);
-    alert('Something went wrong.');
-  }
+  });
+});
 
-  setTimeout(() => {
-    popUp.style.display = 'none';
-    window.location.href = '/index.html';
-  }, 1300);
+document.addEventListener("DOMContentLoaded", function () {
+  const checkboxes = document.querySelectorAll('input[name="services"]');
+  const serviceSelector = document.getElementById("serviceSelector");
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const selected = Array.from(checkboxes)
+        .filter((cb) => cb.checked)
+        .map((cb) => cb.value);
+
+      // Join selected values with comma and show in the input
+      serviceSelector.value = selected.join(", ");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popUp = document.getElementById("pop-up");
+  const form = document.getElementById("form-handler");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const city = document.getElementById("city").value;
+    const message = document.getElementById("message").value;
+
+    const services = Array.from(
+      document.querySelectorAll('input[name="services"]:checked')
+    ).map((cb) => cb.value);
+
+    const payload = { name, mobile, services, city, message };
+    console.log("Sending payload:", payload);
+
+    try {
+      const response = await fetch(
+        "https://rvk-backend-081m.onrender.com/submit-form",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const result = await response.json();
+      if (result.success) {
+        popUp.style.display = "flex";
+      } else {
+        alert("Submission failed!");
+      }
+    } catch (err) {
+      console.error("Fetch error:", err);
+      alert("Something went wrong.");
+    }
+
+    setTimeout(() => {
+      popUp.style.display = "none";
+      window.location.href = "/index.html";
+    }, 1300);
+  });
 });

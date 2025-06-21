@@ -34,6 +34,8 @@ body {
 .logo-body-animation-img-wrapper img {
   animation: logo-loader 1s ease-in-out;
 }
+
+
 video{
 height: 100%;
 width: 100%;
