@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
     const serviceInput = document.getElementById('serviceSelector');
     const choicesWrapper = document.getElementById('choicesWrapper');
